@@ -1,0 +1,225 @@
+
+body {
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* White text */
+  margin: 0;
+  padding: 5px; /* Further reduced padding */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* Include padding in the element's total width/height */
+}
+
+/* Override Bootstrap default button colors */
+.btn-primary {
+  background-color: #e60000; /* Darker Red */
+  border-color: #e60000; /* Darker Red */
+}
+
+.btn-primary:hover {
+  background-color: #cc0000; /* Even Darker Red */
+  border-color: #cc0000; /* Even Darker Red */
+}
+
+.btn-success {
+  background-color: #28a745; /* Green for success actions like submit */
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker Green */
+  border-color: #1e7e34; /* Darker Green */
+}
+
+.btn-warning {
+  background-color: #ffc107; /* Yellow for warning actions like edit */
+  border-color: #ffc107;
+  color: #212529; /* Dark text for contrast */
+}
+
+.btn-warning:hover {
+  background-color: #e0a800; /* Darker Yellow */
+  border-color: #d39e00; /* Darker Yellow */
+}
+
+/* Card styling for reviews */
+.card {
+  border: 1px solid #343a40; /* Black border */
+  background-color: #2c2c2c; /* Dark card background */
+  color: #ffffff; /* White text */
+}
+
+.card-header {
+  background-color: #343a40; /* Black header */
+  color: white;
+  border-bottom: 1px solid #343a40; /* Black border */
+}
+
+.card-body {
+  background-color: #3a3a3a; /* Slightly lighter dark background */
+  color: #ffffff; /* White text */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #000000; /* Black background */
+  border-bottom: 1px solid #e60000; /* Red bottom border */
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  color: #e60000 !important; /* Red brand color */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+  color: #ff3333 !important; /* Lighter red on hover */
+}
+
+.nav-link {
+  color: #ffffff !important; /* White link color */
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: #e60000 !important; /* Red on hover */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  background-color: #2c2c2c; /* Dark dropdown background */
+  border: 1px solid #343a40; /* Black border */
+  color: #ffffff; /* White text */
+  min-width: 15rem; /* Make dropdown wider */
+}
+
+.dropdown-item {
+  color: #ffffff; /* White text for dropdown items */
+  transition: background-color 0.15s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #3a3a3a; /* Slightly lighter background on hover */
+  color: #ffffff; /* Keep text white on hover */
+}
+
+.dropdown-divider {
+  border-top: 1px solid #343a40; /* Black divider */
+}
+
+/* Custom background for Login/Register pages */
+.login-register-bg {
+  background-color: #1a1a1a; /* Dark background */
+  min-height: calc(100vh - 150px); /* Adjust height considering navbar and footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* This padding is relative to its container, not the screen edge */
+}
+
+.login-register-form {
+  background-color: #2c2c2c; /* Dark form background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #343a40; /* Black border */
+}
+
+.login-register-form h2 {
+  color: #e60000; /* Red heading */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for the link between Login and Register */
+.link-between {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.link-between a {
+  color: #e60000; /* Red link */
+  text-decoration: none;
+}
+
+.link-between a:hover {
+  text-decoration: underline;
+}
+
+/* Custom button for the link-between section */
+.btn-link-between {
+  color: #e60000;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-link-between:hover {
+  text-decoration: underline;
+}
+
+/* Style for the "Please log in" message on MovieDetail */
+.movie-detail-login-prompt {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.movie-detail-login-prompt a {
+  color: #e60000; /* Red link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.movie-detail-login-prompt a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  padding: 20px 0;
+  border-top: 1px solid #e60000; /* Red top border */
+  margin-top: auto; /* Push footer to bottom */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-icon-link {
+  color: #ffffff; /* White icon color */
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-icon-link:hover {
+  color: #e60000; /* Red on hover */
+}
+
+/* Adjust container padding when navbar is present */
+.container.mt-4 {
+  padding-top: 20px;
+}
